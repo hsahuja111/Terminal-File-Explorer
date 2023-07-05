@@ -62,12 +62,12 @@ Normal mode is the default mode of out application. It has the following functio
 The application should enter the Command button whenever “:” (colon) key is pressed. In the command mode, the user should be able to enter different commands. All commands appear in the status bar at the bottom.
 
 1. Copy –
-```$ copy <source_file(s)> <destination_directory>```
-Move –
-```$ move <source_file(s)> <destination_directory>```
-Rename –
-```$ rename <old_filename> <new_filename>```
-        
+   ```$ copy <source_file(s)> <destination_directory>```
+   Move –
+   ```$ move <source_file(s)> <destination_directory>```
+   Rename –
+   ```$ rename <old_filename> <new_filename>```
+           
    a.Eg–
    ```$ copy foo.txt bar.txt baz.mp4 ~/foobar```
    ```$ move foo.txt bar.txt baz.mp4 ~/foobar``` 
@@ -79,31 +79,31 @@ Rename –
    
    d. The file ownership and permissions should remain intact
 
-2. Create File –
-```$ create_file <file_name> <destination_path>```
+3. Create File –
+   ```$ create_file <file_name> <destination_path>```
 
-Create Directory –
-```$ create_dir <dir_name> <destination_path>```
+   Create Directory –
+   ```$ create_dir <dir_name> <destination_path>```
 
 Eg – ‘$ create_file foo.txt ~/foobar ‘$ create_dir foo ~/foobar’
 
 4. Delete File –
-```$ delete_file <file_path>```
+   ```$ delete_file <file_path>```
 
-Delete Directory –
-```$ delete_dir <dir_path>```
+   Delete Directory –
+   ```$ delete_dir <dir_path>```
 
 On deleting directory, you must recursively delete all content present inside it .
 
 6. Goto –
-```$ goto <location>```
+   ```$ goto <location>```
 
 Eg – ‘$ goto <directory_path>’
 
 8. Search –
-```$ search <file_name>```
+   ```$ search <file_name>```
 or
-```$ search <directory_name>```
+   ```$ search <directory_name>```
 
    a. Search for a given file or folder under the current directory recursively.
    b. Output should be True or False depending on whether the file or folder exists
