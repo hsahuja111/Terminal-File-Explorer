@@ -59,13 +59,14 @@ Normal mode is the default mode of out application. It has the following functio
 
 
 ### Command Mode:
+
 The application should enter the Command button whenever “:” (colon) key is pressed. In the command mode, the user should be able to enter different commands. All commands appear in the status bar at the bottom.
 
 1. Copy –
    ```$ copy <source_file(s)> <destination_directory>```
-   Move –
+2. Move –
    ```$ move <source_file(s)> <destination_directory>```
-   Rename –
+3. Rename –
    ```$ rename <old_filename> <new_filename>```
            
    a.Eg–
@@ -79,28 +80,28 @@ The application should enter the Command button whenever “:” (colon) key is 
    
    d. The file ownership and permissions should remain intact
 
-3. Create File –
+4. Create File –
    ```$ create_file <file_name> <destination_path>```
 
-   Create Directory –
+5. Create Directory –
    ```$ create_dir <dir_name> <destination_path>```
 
-Eg – ‘$ create_file foo.txt ~/foobar ‘$ create_dir foo ~/foobar’
+   Eg – ```$ create_file foo.txt ~/foobar```
+         ```‘$ create_dir foo ~/foobar```
 
-4. Delete File –
+6. Delete File –
    ```$ delete_file <file_path>```
 
-   Delete Directory –
+7. Delete Directory –
    ```$ delete_dir <dir_path>```
 
-On deleting directory, you must recursively delete all content present inside it .
-
-6. Goto –
+   On deleting directory, you must recursively delete all content present inside it .
+8. Goto –
    ```$ goto <location>```
 
 Eg – ‘$ goto <directory_path>’
 
-8. Search –
+9. Search –
    ```$ search <file_name>```
 or
    ```$ search <directory_name>```
