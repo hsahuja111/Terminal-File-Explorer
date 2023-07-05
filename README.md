@@ -26,34 +26,35 @@ Normal mode is the default mode of out application. It has the following functio
 
 1. Display a list of directories and files in the current folder
 
-a. Every file in the directory should be displayed on a new line with the following attributes for each file -
-i. File Name
-ii. File Size
-iii. Ownership (user and group) and Permissions    
-iv. Last modified
+   a. Every file in the directory should be displayed on a new line with the following attributes for each file -
+   i. File Name
+   ii. File Size
+   iii. Ownership (user and group) and Permissions    
+   iv. Last modified
 
-b. The file explorer shows entries “.” and “..” for current and parent directory respectively
+   b. The file explorer shows entries “.” and “..” for current and parent directory respectively
+   
+   c. The file explorer handles scrolling using the up and down arrow keys.
 
-c. The file explorer handles scrolling using the up and down arrow keys.
-
-d. User is able to navigate up and down in the file list using the corresponding up and down arrow keys. The up and down arrow keys should also handle scrolling during vertical overflow.
+   d. User is able to navigate up and down in the file list using the corresponding up and down arrow keys. The up and down arrow keys should 
+      also handle scrolling during vertical overflow.
 
 
 2. Open directories and files When enter key is pressed -
    
-a. Directory - Clear the screen and navigate into the directory and show the directory contents as specified in point 1
-
-b. File - Open the file in vi editor
+   a. Directory - Clear the screen and navigate into the directory and show the directory contents as specified in point 1
+   
+   b. File - Open the file in vi editor
 
 4. Traversal
 
-a. Go back - Left arrow key should take the user to the previously visited directory
-
-b. Go forward - Right arrow key should take the user to the next directory
-
-c. Up one level - Backspace key should take the user up one level
-
-d. Home – h key should take the user to the home folder
+   a. Go back - Left arrow key should take the user to the previously visited directory
+   
+   b. Go forward - Right arrow key should take the user to the next directory
+   
+   c. Up one level - Backspace key should take the user up one level
+   
+   d. Home – h key should take the user to the home folder
 
 
 
@@ -67,16 +68,16 @@ Move –
 Rename –
 ```$ rename <old_filename> <new_filename>```
         
-Eg–
-```$ copy foo.txt bar.txt baz.mp4 ~/foobar```
-```$ move foo.txt bar.txt baz.mp4 ~/foobar``` 
-```$ rename foo.txt bar.txt```
-
-b. Assume that the destination directory exists, and you have write permissions.
-
-c. Copying/Moving directories should also be implemented
-
-d. The file ownership and permissions should remain intact
+   a.Eg–
+   ```$ copy foo.txt bar.txt baz.mp4 ~/foobar```
+   ```$ move foo.txt bar.txt baz.mp4 ~/foobar``` 
+   ```$ rename foo.txt bar.txt```
+   
+   b. Assume that the destination directory exists, and you have write permissions.
+   
+   c. Copying/Moving directories should also be implemented
+   
+   d. The file ownership and permissions should remain intact
 
 2. Create File –
 ```$ create_file <file_name> <destination_path>```
@@ -104,8 +105,8 @@ Eg – ‘$ goto <directory_path>’
 or
 ```$ search <directory_name>```
 
-a. Search for a given file or folder under the current directory recursively.
-b. Output should be True or False depending on whether the file or folder exists
+   a. Search for a given file or folder under the current directory recursively.
+   b. Output should be True or False depending on whether the file or folder exists
  
 10. On pressing ESC key, the application should go back to Normal Mode
     
